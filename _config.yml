@@ -21,6 +21,7 @@ url: "https://yuxie2025.github.io"
 permalink: /:year/:month/:day/:title
 repository: yuxie2025/yuxie2025.github.io
 paginate: 5
+powered: "yuxie2025"
 
 # MatJek specific configurations
 github_profile: "https://github.com/yuxie2025"
