@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: 雨邪的博客
 #description: Material theme based on <a href="http://materializecss.com">Materialize.css</a> for jekyll sites
-description:""
+description: ""
 baseurl: "/"
 url: "https://yuxie2025.github.io"
 permalink: /:year/:month/:day/:title
