@@ -22,50 +22,8 @@
 
 </footer>
 
-<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-{% for js in layout.js %}
-{% if js contains "//" %}
-<script src="{{js}}"></script>
-{% else %}
-<script src="{{site.baseurl}}/assets/js/{{js}}"></script>
-{% endif %}
-{% endfor %}
-{% for js in page.js %}
-{% if js contains "//" %}
-<script src="{{js}}"></script>
-{% else %}
-<script src="{{site.baseurl}}/assets/js/{{js}}"></script>
-{% endif %}
-{% endfor %}
-
-<script src="{{site.baseurl}}/assets/js/main.js"></script>
-
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?71e61d0c25aa13c0499c9a5ace61ad5d";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
-<!--百度资源自动提交-->
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
+<!-- 不蒜子访问统计 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 </body>
 
