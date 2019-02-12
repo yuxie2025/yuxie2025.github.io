@@ -22,6 +22,36 @@
 
 </footer>
 
+<script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+{% for js in layout.js %}
+{% if js contains "//" %}
+<script src="{{js}}"></script>
+{% else %}
+<script src="{{site.baseurl}}/assets/js/{{js}}"></script>
+{% endif %}
+{% endfor %}
+{% for js in page.js %}
+{% if js contains "//" %}
+<script src="{{js}}"></script>
+{% else %}
+<script src="{{site.baseurl}}/assets/js/{{js}}"></script>
+{% endif %}
+{% endfor %}
+
+<script src="{{site.baseurl}}/assets/js/main.js"></script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?71e61d0c25aa13c0499c9a5ace61ad5d";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
 </body>
 
 </html>
