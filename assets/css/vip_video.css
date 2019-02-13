@@ -8,10 +8,10 @@
     width:auto;
 }
 .body div.video iframe {
-    height:600px;
+    height:800px;
     position:relative;
     margin:10px 10px 10px 42px;
-    width:91%;
+    width:95%;
 }
 
 .body div.video div.video_info {
@@ -23,7 +23,7 @@
 input.video_url {
     position:relative;
     left:10px;
-    width:69.5%;
+    width:80%;
 }
 
 button.bf {
@@ -36,5 +36,5 @@ button.bf {
     padding-top:5px;
     padding-bottom:5px;
     left:40px;
-    width:91%;
+    width:95%;
 }
