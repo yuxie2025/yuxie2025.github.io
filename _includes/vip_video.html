@@ -1,29 +1,107 @@
-<div class="body">
-			<div class="video">
-				<div class="hint">
-							<p >
-								使用方法：(以爱奇艺为例)选择要看的VIP视频，然后将浏览器的地址复制到输入框点击播放按钮即可！（地址如：http://www.iqiyi.com/v_19rra8tjv0.html）
-							</p>
-          <iframe src="js/vip_js/player.htm" id="player" width="100%" height="600px" allowtransparency="true" frameborder="0" scrolling="no"></iframe>           
+<!DOCTYPE html>
+<!-- Website template form http://www.cssmoban.com/ -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vip视频</title>
+
+    <style type="text/css">
+
+        .body div.video div.hint p {
+            color: #416277;
+            font-size: 12px;
+            left: 40px;
+            line-height: 24px;
+            margin: 0;
+            position: relative;
+            width: auto;
+        }
+
+        .body div.video iframe {
+            height: 600px;
+            position: relative;
+            margin: 10px 10px 10px 42px;
+            width: 91%;
+        }
+
+        .body div.video div.video_info {
+            position: relative;
+            padding-top: 10px;
+            left: 40px;
+            width: 100%;
+        }
+
+        .body div.video div.video_info input.video_url {
+            position: relative;
+            left: 10px;
+            width: 69.5%;
+        }
+
+        .body div.video div.video_play button.bf {
+            border-radius: 4px 4px 3px 3px;
+            background-color: #5BC0DE;
+            color: #ffffff;
+            position: relative;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            left: 40px;
+            width: 91%;
+        }
+
+    </style>
+
+    <script type="text/javascript">eval(function (p, a, c, k, e, d) {
+        e = function (c) {
+            return (c < a ? "" : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))
+        };
+        if (!''.replace(/^/, String)) {
+            while (c--) d[e(c)] = k[c] || e(c);
+            k = [function (e) {
+                return d[e]
+            }];
+            e = function () {
+                return '\\w+'
+            };
+            c = 1
+        }
+        ;
+        while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+        return p
+    }('b a(){0 6=1.2("9").4;0 5=1.2("3");0 3=1.2("3").c;0 8=5.e[3].4;0 7=1.2("f");7.d=8+6}', 16, 16, 'var|document|getElementById|jk|value|jkurl|diz|cljurl|jkv|url|dihejk|function|selectedIndex|src|options|player'.split('|'), 0, {}))</script>
+</head>
+<body>
+<div class="page">
+    <div class="body">
+        <div class="video">
+            <div class="hint">
+                <p>
+                    使用方法：(以爱奇艺为例)选择要看的VIP视频，然后将浏览器的地址复制到输入框点击播放按钮即可！（地址如：http://www.iqiyi.com/v_19rra8tjv0.html）
+                </p>
+                <iframe src="player.html" id="player" width="100%" height="600px" allowtransparency="true"
+                        frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="video_info">
+                <select class="select_video_url" id="jk">
+                    <option value="http://jiexi.92fz.cn/player/vip.php?url=">1号通用接口（多线路）</option>
+                    <option value="http://v.72du.com/api/?url=">2号通用接口（多线路）</option>
+                    <option value="http://2gty.com/apiurl/yun.php?url=">接口2:号通用接口（推荐）</option>
+                    <option value="http://qtzr.net/s/?qt=">接口3：爱奇艺</option>
+                    <option value="http://www.97panda.com/kkflv/index.php?url=">接口4：爱奇艺</option>
+                    <option value="http://yyygwz.com/index.php?url=">接口4：支持腾讯vip</option>
+                    <option value="http://api.baiyug.cn/vip/index.php?url=">1号通用接口（7.20更新）</option>
+                    <option value="http://api.wlzhan.com/sudu/?url=">2号通用接口（7.23更新）</option>
+                    <option value="http://000o.cc/jx/ty.php?url=">3号通用接口</option>
+                    <option value="http://www.wmxz.wang/video.php?url=">4号通用接口</option>
+                    <option value="https://apiv.ga/magnet/">万能磁力链接解析</option>
+                </select>
+                <input class="video_url" width="500px" type="text" placeholder="输入需要会员的视频播放地址" id="url">
+            </div>
+            <div class="video_play">
+                <button id="bf" class="bf" type="button" width="500px" onclick="dihejk()">播放</button>
+            </div>
         </div>
-        <div class="video_info">
-              <select class="select_video_url" id="jk">
-                  <option value="http://jiexi.92fz.cn/player/vip.php?url=">1号通用接口（多线路）</option>
-                  <option value="http://v.72du.com/api/?url=">2号通用接口（多线路）</option>
-                  <option value="http://2gty.com/apiurl/yun.php?url=">接口2:号通用接口（推荐）</option>
-                  <option value="http://qtzr.net/s/?qt=">接口3：爱奇艺</option>
-                  <option value="http://www.97panda.com/kkflv/index.php?url=">接口4：爱奇艺</option>
-                  <option value="http://yyygwz.com/index.php?url=">接口4：支持腾讯vip</option>
-                  <option value="http://api.baiyug.cn/vip/index.php?url=">1号通用接口（7.20更新）</option>
-                  <option value="http://api.wlzhan.com/sudu/?url=">2号通用接口（7.23更新）</option>
-                  <option value="http://000o.cc/jx/ty.php?url=">3号通用接口</option>
-                  <option value="http://www.wmxz.wang/video.php?url=">4号通用接口</option> 
-                  <option value="https://apiv.ga/magnet/">万能磁力链接解析</option>
-               </select>
-               <input class="video_url"  width ="500px" type="text" placeholder="输入需要会员的视频播放地址" id="url">
-         </div>
-         <div class="video_play">
-            <button id="bf" class="bf" type="button" width="500px" onclick="dihejk()">播放</button>
-         </div>
-      </div>
-</div>
+    </div>
+</body>
+</html>
