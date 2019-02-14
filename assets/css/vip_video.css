@@ -29,25 +29,21 @@ body {
     margin-bottom: 5px;
 }
 
-.cs {
-    height: auto;
-}
-
 .video_info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: auto;
 }
 
 .select_video_url {
     height: 30px;
-    width: 100%;
-    margin-bottom: 5px;
+    width: 40%;
+    margin-right: 5px;
 }
 
 .video_url {
-    height: 30px;
+    height: 24px;
     width: 100%;
 }
 
@@ -56,7 +52,7 @@ body {
     width: 100%;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     height: auto;
 }
 
