@@ -42,6 +42,17 @@ body {
     height: auto
 }
 
+.select_video_url {
+    height: 30px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.video_url {
+    height: 30px;
+    width: 100%;
+}
+
 .video_play {
     display: flex;
     height: auto
@@ -56,5 +67,6 @@ body {
     margin-bottom: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
+    height: 35px;
     width: 100%;
 }
