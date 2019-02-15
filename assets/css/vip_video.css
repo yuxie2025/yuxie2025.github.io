@@ -23,20 +23,20 @@ body {
 .player {
     height: 100%;
     width: 100%;
-    margin-bottom: 5px;
 }
 
 .video_info {
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: 5px;
     margin-bottom: 5px;
     height: auto;
 }
 
 .select_video_url {
     height: 30px;
-    width: 20%;
+    width: 30%;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -57,5 +57,5 @@ body {
     text-align: center;
     margin-right: 5px;
     height: 30px;
-    width: 40%;
+    width: 20%;
 }
