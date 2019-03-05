@@ -1,0 +1,33 @@
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.xs {
+    color: #333;
+    font-size: 11px;
+    width: min-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-animation: marquee 10s linear infinite;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
