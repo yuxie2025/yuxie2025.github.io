@@ -5,11 +5,6 @@ js: ["post.js"]
 ---
 <div id="post-info">
     <h4>{{page.title}}</h4>
-    <!--熊掌号
-  <div style="padding-left: 17px; padding-right: 17px;">
-    <script>cambrian.render('head')</script>
-  </div>
-  end-->
     <ul class="collapsible hoverable" data-collapsible="accordion">
         <li>
             <div class="collapsible-header">
@@ -54,15 +49,6 @@ js: ["post.js"]
     </div>
 </div>
 <hr>
-<div class="knight">
-    <p>技术文章推送</p>
-    <p>手机、电脑实用软件分享</p>
-    <img src="{{site.baseurl}}/assets/res/knight.png" alt="微信搜索公众号: 程序骑士" title="微信搜索公众号: 程序骑士">
-    <div>
-        <img src="{{site.baseurl}}/assets/res/wechat.png" alt="wechat">
-        <b>微信公众号：程序骑士</b>
-    </div>
-</div>
 {% if site.disqus_shortname and page.comments %}
 <div id="disqus_thread"></div>
 <script>
