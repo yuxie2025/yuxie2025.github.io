@@ -569,6 +569,14 @@
       "resultOk": "true",
       "type": "get",
       "url": "http://edms.fcbox.com/hibox/weixin/getVerifyCode"
+    },
+    {
+      "id": 76,
+      "parameterAfter": "",
+      "parameterBefore": "type=register&phone=",
+      "resultOk": "0",
+      "type": "get",
+      "url": "https://reg.ytl.yottachain.io/YTL/public/index.php/index/User/sendPhoneCode"
     }
   ]
 }
