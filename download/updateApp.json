@@ -1,10 +1,10 @@
 {
   "id": 1,
-  "appVersion": 1.0,
+  "appVersion": 1.1,
   "releaseTime": "上线时间",
   "releaseStatus": "0",
   "type": "0",
   "url": "http://yuxie2025.github.io/download/douyin.apk",
   "forceUpgrape": "Y",
-  "remarks": "升级说明信息"
+  "remarks": "升级无水印视频下载方案,旧版失效,请升级!!!"
 }
